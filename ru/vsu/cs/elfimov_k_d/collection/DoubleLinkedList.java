@@ -1,5 +1,6 @@
 package ru.vsu.cs.elfimov_k_d.collection;
 
+import java.util.Collection;
 import java.util.Iterator;
 
 public class DoubleLinkedList<T> implements Iterable<T> {
@@ -38,19 +39,16 @@ public class DoubleLinkedList<T> implements Iterable<T> {
         }
     }
 
-    public void add(T value) {
-        addFirst(value);
-    }
-
-    public void addFirst(T value) {
+    public boolean addFirst(T value) {
         head = new ListNode<>(value, null, head);
         if (count == 0) {
             tail = head;
         }
         count++;
+        return true;
     }
 
-    public void addLast(T value) {
+    public boolean addLast(T value) {
         ListNode<T> newNode = new ListNode<>(value, tail,null);
         if (count > 0) {
             tail.next = newNode;
@@ -59,6 +57,17 @@ public class DoubleLinkedList<T> implements Iterable<T> {
         }
         tail = newNode;
         count++;
+        return true;
+    }
+
+    public boolean addAll(Collection<? extends T> list) {
+        boolean result;
+        if (result = list != null && !list.isEmpty()) {
+            for (T value : list) {
+                result = result && addLast(value);
+            }
+        }
+        return result;
     }
 
     private void emptyError() throws NullPointerException {

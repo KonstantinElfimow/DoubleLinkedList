@@ -3,6 +3,7 @@ package ru.vsu.cs.elfimov_k_d;
 import ru.vsu.cs.elfimov_k_d.functional.BlockingQueue;
 import ru.vsu.cs.elfimov_k_d.task.Task1;
 import ru.vsu.cs.elfimov_k_d.task.Task2;
+import ru.vsu.cs.elfimov_k_d.task.Task3;
 
 public class Main {
 
@@ -26,6 +27,7 @@ public class Main {
 
         queue.put(new Task1().test());
         queue.put(new Task2().test());
+        queue.put(new Task3().test());
     }
     private static void measureTime(Runnable task) {
         long startTime = System.currentTimeMillis();
