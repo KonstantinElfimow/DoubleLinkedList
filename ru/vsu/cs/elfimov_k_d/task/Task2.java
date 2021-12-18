@@ -1,7 +1,6 @@
-package ru.vsu.cs.elfimov_k_d.tasks;
+package ru.vsu.cs.elfimov_k_d.task;
 
-import org.w3c.dom.ls.LSOutput;
-import ru.vsu.cs.elfimov_k_d.utils.DoubleLinkedList;
+import ru.vsu.cs.elfimov_k_d.collection.DoubleLinkedList;
 
 public class Task2 {
     public Runnable test() {

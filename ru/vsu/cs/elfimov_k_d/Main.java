@@ -1,8 +1,8 @@
 package ru.vsu.cs.elfimov_k_d;
 
 import ru.vsu.cs.elfimov_k_d.functional.BlockingQueue;
-import ru.vsu.cs.elfimov_k_d.tasks.Task1;
-import ru.vsu.cs.elfimov_k_d.tasks.Task2;
+import ru.vsu.cs.elfimov_k_d.task.Task1;
+import ru.vsu.cs.elfimov_k_d.task.Task2;
 
 public class Main {
 

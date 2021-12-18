@@ -1,4 +1,4 @@
-package ru.vsu.cs.elfimov_k_d.utils;
+package ru.vsu.cs.elfimov_k_d.collection;
 
 import java.util.Iterator;
 

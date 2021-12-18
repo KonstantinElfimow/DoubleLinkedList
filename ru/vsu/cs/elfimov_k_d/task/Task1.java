@@ -1,7 +1,7 @@
-package ru.vsu.cs.elfimov_k_d.tasks;
+package ru.vsu.cs.elfimov_k_d.task;
 
 import ru.vsu.cs.elfimov_k_d.model.Workers;
-import ru.vsu.cs.elfimov_k_d.utils.DoubleLinkedList;
+import ru.vsu.cs.elfimov_k_d.collection.DoubleLinkedList;
 
 import java.util.HashSet;
 
